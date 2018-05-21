@@ -34,8 +34,8 @@ PALAVRA {LETRA}+
 
 
 [.\n]* {printf("\n");};
-[[:space:]]+ {printf(" ");};
-[[:^space:]]+  ;
+[[:space:]]{1} {printf(" ");};
+[[:^space:]]{1} {printf(" ");}  ;
 
 
 
